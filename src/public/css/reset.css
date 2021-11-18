@@ -1,0 +1,45 @@
+html,
+body,
+div,
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+form,
+label,
+span,
+ul,
+ol,
+li {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 5mm;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: dimgray;
+}
+
+small {
+    font-size: 9px;
+    color: dimgrey;
+}

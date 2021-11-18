@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <script type="module" src="../services/js/app-juridica.js"></script>
+    <script type="module" src="../domain/PessoaJuridica.js"></script>
+    <script type="module" src="../domain/Pessoa.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Herança - Exemplo: Cadastro Pessoa Jurídica</h1>
+    </header>
+
+    <main>
+        <form id="formulario-pessoa" class="formulario">
+
+            <label for="t-nome">Nome</label>
+            <input type="text" name="nome" id="t-nome">
+ 
+            <label for="t-endereco">Endereço</label>
+            <input type="text" name="endereco" id="t-endereco">
+
+            <label for="t-telefone">Celular</label>
+            <input type="tel" name="telefone" id="t-telefone" 
+            placeholder="00-00000-0000"  pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+            <small>Exemplo:00-0000-0000</small>
+
+            <label for="t-cnpj">Número do CNPJ</label>
+            <input type="text" name="cnpj" id="t-cnpj">
+
+            <div class="botoes">
+                <input type="button" id="t-btn-limpar" value="Limpar">
+                <input type="submit" id="t-btn-registrar" value="Registrar">
+            </div>
+
+        </form>
+
+        <ul id="lista-pessoas" class="lista">
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>
+           <a href="index.html">Home</a>
+          </p>
+    </footer>
+
+</body>
+
+</html>
