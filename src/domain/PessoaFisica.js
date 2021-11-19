@@ -26,7 +26,7 @@ class PessoaFisica extends Pessoa {
 
     set cpf(novo_cpf) {
         if (this._cpfIsValid(novo_cpf)) {
-            return this._cpf = novo_cpf
+             this._cpf = novo_cpf
         } else {
             throw new Error(alert("CPF informado não é válido"));
         }
